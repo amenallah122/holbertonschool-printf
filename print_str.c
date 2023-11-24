@@ -22,4 +22,5 @@ int print_str(va_list arg)
 			_putchar(str[n]);
 		}
 	}
+	return (n);
 }

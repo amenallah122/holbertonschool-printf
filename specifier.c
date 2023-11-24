@@ -4,12 +4,13 @@
  * @specifier: the character
  * Return: 0
  */
-int print_format(char specifier, va_list args)
+int (*print( char specifier))(va_list)
 {
 	ahla_nes fel_kayes[] = {
 		{'c', print_char},
 		{'s', print_str},
-		{'d', print_numb},
+		/*{'d', print_numb},
+		//{'i', print_numb},*/
 		{'\0', NULL}
 	};
 	int j;
@@ -18,7 +19,7 @@ int print_format(char specifier, va_list args)
 	{
 		if (fel_kayes[j].character == specifier)
 		{
-			return (fel_kayes.fun);
+			return (fel_kayes[j].fun);
 		}
 	}
 	return (0);
