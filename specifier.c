@@ -18,7 +18,7 @@ int print_format(char specifier, va_list args)
 	{
 		if (fel_kayes[j].character == specifier)
 		{
-			return (fel_kayes.fun);
+			return (fel_kayes[j].fun);
 		}
 	}
 	return (0);
