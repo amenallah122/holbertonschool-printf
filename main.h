@@ -11,7 +11,7 @@ typedef struct amen
 	int (*fun)(va_list);
 }ahla_nes;
 
-int (*print(char specifier))(va_list args);
+int (*print(char specifier)(va_list args));
 int print_char(va_list arg);
 int print_str(va_list arg);
 int print_numb(va_list arg);
