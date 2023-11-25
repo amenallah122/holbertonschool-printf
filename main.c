@@ -11,7 +11,7 @@ int main(void)
 {
 
 
-     _printf("Let's try %c",'c');
+     _printf("Let's try %i",5);
     
     return (0);
 }
