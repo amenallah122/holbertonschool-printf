@@ -1,10 +1,10 @@
-#include "main.h"
+/**#include "main.h"
 /**
  * print_numb -  Prints a number
  * @arg: the number
  * Return: n bytes
  */
-int print_numb(va_list arg)
+/*int print_numb(va_list arg)
 {
 	int number = va_arg(arg, int);
 	int i = 0;
@@ -28,7 +28,7 @@ int print_numb(va_list arg)
  * @number: the number
  * Return: n bytes
  */
-int print_numb_recursive(int number)
+/*int print_numb_recursive(int number)
 {
 	int i = 0;
 
@@ -38,3 +38,4 @@ int print_numb_recursive(int number)
 	_putchar(number % 10 + '0');
 	return (i + 1);
 }
+*/
