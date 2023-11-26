@@ -34,6 +34,7 @@ int _printf(const char *format, ...);
 gcc -Wall -Werror -Wextra -pedantic -std=gnu89 -Wno-format *.c
 
 # Flowchart
+![405242963_352112987409006_7171541205706789350_n](https://github.com/amenallah122/holbertonschool-printf/assets/146720071/89f12604-a150-48aa-8d53-c08257cb858e)
 
 
 # Authors
