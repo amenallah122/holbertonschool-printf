@@ -6,7 +6,7 @@ Please note that this version of _printf focuses on fundemantal formatting optio
 
 | Format specifier            | Output                                                               |
 | ----------------- | ----------------- |
-| [%c]() | [Character] |
+| [%c] | [Character] |
 | [%s] | [String] |
 | [%d] | [Decimal] |
 | [%i] | [integer] |
