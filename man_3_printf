@@ -1,41 +1,44 @@
-_printf
+.TH _printf
 
-NAME
-		_printf - Format and print
-
-SYNOPSIS
-		int _printf(const char *format, ...);
-
-DESCRIPTION
-		the _printf function prints the argument according to the format specified by the format string.
+.SH NAME
+_printf \- Format and print
+.SH SYNOPSIS
+.B -printf
+.B -printf ...OPTIONS...
+.SH DESCRIPTION
+the _printf function prints the argument according to the format specified by the format string.
 
 		the format string may contain format specifiers, which begin with the percent character '%', followed by a conversion specifier.
 
 		the conversion specifiers supported by __printf are:
 
-		%c		Prints a character.
+.TP
+\fB-c,
+Prints a character.
 
-		%s		prints a string.
+.TP
+\fB-s,
+prints a string.
 
-		%d, %i		prints an integer.
 
-RETURN VALUE
-		the _printf function returns the number of characters printed on success or a negative value on error.
+.TP
+\fB-d,i,
+prints an integer.
 
-EXAMPLES
-		Example 1: Printing a character:
+.SH EXAMPLES
+.P
+Example 1: Printing a character:
 			char c = 'a';
 			_printf("The character is %c\n", c);
-
-		Example 2: Printing a string:
+.P
+Example 2: Printing a string:
 			char str[] = "Hello, World!";
 			_printf("%s\n", str);
-
-		Example 3: Printing an integer:
+.P
+Example 3: Printing an integer:
 			int n = 77;
 			_printf("The number is: %d\n", n);
 
-AUTHORS
-		Written by:
-				Amen Allah Mrabet
-				Amen Allah Garmai
+.SH AUTHOR
+Amen Allah Mrabet
+Amen Allah Garmai
