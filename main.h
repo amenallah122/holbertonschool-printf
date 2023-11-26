@@ -16,7 +16,6 @@ int (*print(char specifier))(va_list args);
 int print_char(va_list arg);
 int print_str(va_list arg);
 int print_numb(va_list arg);
-int print_numb_recursive(va_list arg);
 int _putchar(char c);
 int _printf(const char *format, ...);
 
