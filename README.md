@@ -33,3 +33,4 @@ int _printf(const char *format, ...);
 # Compilation
 gcc -Wall -Werror -Wextra -pedantic -std=gnu89 -Wno-format *.c
 
+# Flowchart
