@@ -34,3 +34,8 @@ int _printf(const char *format, ...);
 gcc -Wall -Werror -Wextra -pedantic -std=gnu89 -Wno-format *.c
 
 # Flowchart
+
+
+# Authors
+Amen Allah Guarmai
+Amen Allah Mrabet
