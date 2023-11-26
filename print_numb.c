@@ -1,35 +1,36 @@
 #include "main.h"
-
 /**
- * print_numb_recursive - helper
- * @arg: the number
- * Return: n bytes
- */
-int print_numb_recursive(va_list arg)
-{
-    int number = va_arg(arg, int);
-    int i = 0;
-
-    if (number < 0)
-    {
-        _putchar('-');
-        i++;
-        number = -number;
-    }
-
-    if (number / 10)
-        i += print_numb_recursive(arg);
-
-    _putchar(number % 10 + '0');
-    return (i + 1);
-}
-
-/**
- * print_numb - Prints a number
+ * print_numb - prints numbers
  * @arg: the number
  * Return: n bytes
  */
 int print_numb(va_list arg)
 {
-    return print_numb_recursive(arg);
+	unsigned int div = 1;
+	unsigned int i = 0;
+	int number = va_arg(arg, int);
+	unsigned int n;
+
+	if (number < 0)
+	{
+		_putchar('-');
+		i++;
+		n = -number;
+	}
+	else
+	{
+		n = number;
+	}
+	while (n / div > 9)
+	{
+		div *= 10;
+	}
+	while (div >= 1)
+	{
+		_putchar((n / div) + '0');
+		i++;
+		n %= div;
+		div /= 10;
+	}
+	return (i);
 }
