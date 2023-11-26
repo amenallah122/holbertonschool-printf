@@ -4,7 +4,7 @@
  * @specifier: the character
  * Return: 0
  */
-int (*print( char specifier))(va_list)
+int (*print(char specifier))(va_list)
 {
 	ahla_nes fel_kayes[] = {
 		{'c', print_char},
@@ -15,7 +15,7 @@ int (*print( char specifier))(va_list)
 	};
 	int j;
 
-	for ( j = 0; fel_kayes[j].character != '\0'; j++)
+	for (j = 0; fel_kayes[j].character != '\0'; j++)
 	{
 		if (fel_kayes[j].character == specifier)
 		{
