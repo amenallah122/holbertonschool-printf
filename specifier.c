@@ -22,7 +22,5 @@ int (*print( char specifier))(va_list)
 			return (fel_kayes[j].fun);
 		}
 	}
-	_putchar('%');
-_putchar(specifier);
-return (2);
+	return (0);
 }
