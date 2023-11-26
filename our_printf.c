@@ -35,7 +35,7 @@ int _printf(const char *format, ...)
 		{
 			if ((*print(format[i + 1]))(args) != 0)
 			{
-				count + = (*print(format[i + 1]))(args);
+				count += (*print(format[i + 1]))(args);
 			}
 			else
 			{
