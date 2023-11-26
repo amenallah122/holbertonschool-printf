@@ -1,6 +1,7 @@
 #include "main.h"
 /**
  * _printf - func that produces output according to a format
+ * print - print :)
  * @format: format
  * Return: int
  */
@@ -14,7 +15,6 @@ int _printf(const char *format, ...)
 
 	if (format == NULL)
 		return (-1);
-
 	for (i = 0; format[i] != '\0';)
 	{
 		if (format[i] != '%')
@@ -42,7 +42,6 @@ int _printf(const char *format, ...)
 				_putchar('%');
 				_putchar(format[i + 1]);
 				count++;
-
 			}
 	}
 	va_end(args);
