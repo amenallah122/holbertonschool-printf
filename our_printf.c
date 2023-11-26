@@ -40,6 +40,7 @@ int _printf(const char *format, ...)
 			{
 				_putchar(format[i]);
 				count++;
+				i++;
 			}
 	}
 	va_end(args);
