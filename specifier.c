@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * print_format -  selects the right function
+ * print -  selects the right function
  * @specifier: the character
  * Return: 0
  */
