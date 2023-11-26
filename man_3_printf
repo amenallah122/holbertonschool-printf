@@ -17,7 +17,7 @@ DESCRIPTION
 
 		%s		prints a string.
 
-		%d, %i	prints an integer.
+		%d, %i		prints an integer.
 
 RETURN VALUE
 		the _printf function returns the number of characters printed on success or a negative value on error.
