@@ -26,7 +26,7 @@ int _printf(const char *format, ...)
 		{
 			_putchar('%');
 			count++;
-			i+= 2;
+			i += 2;
 		}
 		else if (format[i] == '%' && format[i + 1] == '\0')
 			return (-1);
@@ -36,6 +36,13 @@ int _printf(const char *format, ...)
 			count += (*print(format[i + 1]))(args);
 			i += 2;
 		}
+		else
+			{
+				_putchar('%');
+				_putchar(format[i+1]);
+				count++;
+
+			}
 	}
 	va_end(args);
 	return (count);
