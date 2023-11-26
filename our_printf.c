@@ -1,7 +1,6 @@
 #include "main.h"
 /**
- * our_printf - func that produces output according to a format
- *
+ * _printf - func that produces output according to a format
  * @format: format
  * Return: int
  */
@@ -9,6 +8,7 @@ int _printf(const char *format, ...)
 {
 	unsigned int i, count = 0;
 	va_list args;
+
 	va_start(args, format);
 
 	if (format == NULL)
@@ -39,7 +39,7 @@ int _printf(const char *format, ...)
 		else
 			{
 				_putchar('%');
-				_putchar(format[i+1]);
+				_putchar(format[i + 1]);
 				count++;
 
 			}
