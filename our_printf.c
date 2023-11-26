@@ -33,16 +33,24 @@ int _printf(const char *format, ...)
 
 		else if (format[i] == '%' && format[i + 1] != '%')
 		{
-			count += (*print(format[i + 1]))(args);
+			if ((*print(format[i + 1]))(args) != 0)
+			{
+				count + = (*print(format[i + 1]))(args);
+			}
+			else
+			{
+				_putchar('%');
+				_putchar(format[i + 1]);
+				count += 2;
+			}
 			i += 2;
 		}
 		else
-			{
-				_putchar('%');
-				_putchar(format[i+1]);
-				count++;
-
-			}
+		{
+			_putchar('%');
+			_putchar(format[i + 1]);
+			count++;
+		}
 	}
 	va_end(args);
 	return (count);
