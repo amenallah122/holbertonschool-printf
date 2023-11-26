@@ -6,10 +6,10 @@ Please note that this version of _printf focuses on fundemantal formatting optio
 
 | Format specifier            | Output                                                               |
 | ----------------- | ----------------- |
-| [%c] | [Character] |
-| [%s] | [String] |
-| [%d] | [Decimal] |
-| [%i] | [integer] |
+| %c | Character |
+| %s | String |
+| %d | Decimal |
+| %i | integer |
 
 This version is still under work so it can't fully replace the standard printf function.
 
