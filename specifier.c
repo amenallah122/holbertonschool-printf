@@ -9,8 +9,8 @@ int (*print( char specifier))(va_list)
 	ahla_nes fel_kayes[] = {
 		{'c', print_char},
 		{'s', print_str},
-		/*{'d', print_numb},
-		//{'i', print_numb},*/
+		{'d', print_numb},
+		{'i', print_numb},
 		{'\0', NULL}
 	};
 	int j;
@@ -22,6 +22,7 @@ int (*print( char specifier))(va_list)
 			return (fel_kayes[j].fun);
 		}
 	}
-	
+	_putchar('%');
+	_putchar(specifier);
 	return (0);
 }
